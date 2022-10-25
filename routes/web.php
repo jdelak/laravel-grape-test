@@ -27,3 +27,5 @@ Route::middleware([
     })->name('dashboard');
     Route::get('pages/{page}/editor', 'App\Http\Controllers\PageController@editor');
 });
+
+Route::get('pages/{page}', 'App\Http\Controllers\PageController@show');
